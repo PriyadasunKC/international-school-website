@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombo International School</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="titlelogo.png" type="image/icon type">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <header id="mainHead">
+            <div id="logoContainer">
+                <a href="home.html"><img src="logo.png" alt="shool logo" id="logo"></a>
+                <div id="contactDetails">
+                    <p>
+                        COLOMBO INTERNATIONAL SCHOOL <br><br>
+                        <i class="fa fa-fax" style="color: black;">&nbsp;</i>009411 2697587 <br>
+                        <i class="fa fa-phone" style="color: black;"></i> +94 11 2697587 <br>
+                        <i class="fa fa-envelope" style="color: black;"></i> <a href="#"
+                            id="email">ciskandy@sltnet.lk</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div id="secondSection">
+            <div id="navigationSection">
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="RegistrationForm.html">Registration Form</a></div>
+                <div class="link"><a href="login.html">Login</a></div>
+                <div class="link"><a href="about.html">About Us</a></div>
+                <div class="link"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <div id="banerImageSection">
+                <div id="bannerImageText"> Login</div>
+                <img src="login.jpg" alt="banner image" id="bannerImage">
+            </div>
+        </div>
+        <div id="thirdSection">
+            <div id="loginBody">
+                <img src="login.jpg" alt="music Practice" id="logoImage">
+                <div id="loginouterBox">
+                    <div id="loginLeftBox">
+                        <div id="leftBoxTop">
+                            <p id="leftBoxTopText">Welcome Back to <br> Colombo International <span
+                                    id="specialEffect">School</span></p>
+                        </div>
+                        <div id="leftBoxBottom">
+                            <p id="leftBoxBottomText">Login to continue your <br> account</p>
+                        </div>
+                    </div>
+                    <div id="loginRightBox">
+                        <div id="loginRightBoxHeading">Login</div>
+                        <div id="lognRightBottomBox">
+                            <div id="loginRightFirstBox">
+                                <select name="AccoutType" id="accTypeCheck">
+                                    <option value="option0" id="identity">- Select Account Type -</option>
+                                    <option value="option1">Administrator</option>
+                                    <option value="option2">Guest</option>
+                                </select>
+                            </div>
+                            <div id="accountTypeError" class="error"></div>
+
+                            <div id="loginRightSecondBox">
+                                <input type="text" id="userName" class="properties" placeholder="User Name">
+                            </div>
+                            <div id="userNameError" class="error"></div>
+
+                            <div id="loginRightThridBox">
+                                <input type="text" id="password" class="properties" placeholder="Password">
+                            </div>
+                            <div id="passwordError" class="error"></div>
+
+                            <div id="validateSuccessfull"><i class="fa fa-check" id="correctIcon"></i> Login Successful </div>
+
+                            <div id="loginRightfourthBox">
+                                <button id="signIn" onclick="confirmValidity1()">Login</button>
+                                <button id="reset" onclick=" resetAll()">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fourthSection">
+            <div class="fourthSectionText">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Facilities</li>
+                    <li>Admissions</li>
+                    <li>Kandy Branch</li>
+                    <li>Teach at CIS</li>
+                </ul>
+            </div>
+            <div class="fourthSectionText">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>News and Events</li>
+                </ul>
+            </div>
+            <div id="fourthSectionText">
+                <p>
+                    COLOMBO INTERNATIONAL SCHOOL <br>
+                    28, Gregory's Road, <br>
+                    Colombo 7, <br>
+                    Sri Lanka. <br><br>
+                    009411 2697587
+                </p>
+            </div>
+        </div>
+        <footer id="foot">© Colombo International School. All rights reserved.</footer>
+    </div>
+</body>
+
+</html>

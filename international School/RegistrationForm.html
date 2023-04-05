@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombo International School</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="titlelogo.png" type="image/icon type">
+    <link rel="stylesheet" href="RegistrationForm.css">
+    <script src="RegistrationForm.js"></script>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <header id="mainHead">
+            <div id="logoContainer">
+                <a href="home.html"><img src="logo.png" alt="shool logo" id="logo"></a>
+                <div id="contactDetails">
+                    <p>
+                        COLOMBO INTERNATIONAL SCHOOL <br><br>
+                        <i class="fa fa-fax" style="color: black;">&nbsp;</i>009411 2697587 <br>
+                        <i class="fa fa-phone" style="color: black;"></i> +94 11 2697587 <br>
+                        <i class="fa fa-envelope" style="color: black;"></i> <a href="#"
+                            id="email">ciskandy@sltnet.lk</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div id="secondSection">
+            <div id="navigationSection">
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="RegistrationForm.html">Registration Form</a></div>
+                <div class="link"><a href="login.html">Login</a></div>
+                <div class="link"><a href="about.html">About Us</a></div>
+                <div class="link"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <div id="banerImageSection">
+                <div id="bannerImageText"> Registration</div>
+                <img src="form.jpg" alt="banner image" id="bannerImage">
+            </div>
+        </div>
+        <div id="thirdSection">
+            <div id="headStyle"></div>
+            <div id="mainContainer1">
+                <header id="head">
+                    <h1 id="heading">
+                        User Registration Form
+                    </h1>
+                    <hr>
+                </header>
+                <div id="bodyDetails">
+                    <div id="detailContainer">
+                        <label for="Username" id="lableName" class="nameValue">User ID: <span class="star">&#42;</span>
+                        </label>
+                        <input type="text" id="idValue" name="nameValue" class="nameValue">
+                        <br>
+                    </div>
+                    <div class="Error" id="idError"></div>
+                    <div id="detailContainer">
+                        <label for="Username" id="lableName" class="nameValue">Password: <span class="star">&#42;</span>
+                        </label>
+                        <input type="password" id="passwordValue" name="passwordValue" class="nameValue">
+                    </div>
+                    <div id="passwordError" class="Error"></div>
+                    <div id="detailContainer">
+                        <label for="Username" id="lableName" class="nameValue">Name: <span class="star">&#42;</span>
+                        </label>
+                        <input type="text" id="nameValue" name="nameValue" class="nameValue">
+                    </div>
+                    <div id="nameError" class="Error"></div>
+                    <div id="detailContainer">
+                        <label for="Username" id="lableName" class="nameValue">Address:
+                        </label>
+                        <input type="text" id="AddValue" name="conPassValue" class="nameValue">
+                    </div>
+                    <div id="addressError" class="Error"></div>
+                    <div id="detailContainer">
+                        <label for="Username" class="nameValue" id="lableName">Country: <span class="star">&#42;</span>
+                        </label>
+                        <select id="dropMenu" name="dropdown" class="nameValue">
+                            <option value="option0" id="defalutDrop">- Select A Country -</option>
+                            <option value="option1">United States</option>
+                            <option value="option2">United Kingdom</option>
+                            <option value="option3">United Arabic Emirates</option>
+                            <option value="option4">Japan</option>
+                            <option value="option4">Germany</option>
+                            <option value="option4">Switzerland</option>
+                        </select>
+                    </div>
+                    <div id="countryError" class="Error"></div>
+                    <div id="detailContainer">
+                        <label for="Username" id="lableName" class="nameValue">Zip Code:
+                        </label>
+                        <input type="text" id="zipValue" name="conPassValue" class="nameValue">
+                    </div>
+                    <div id="zipError" class="Error"></div>
+
+                    <div id="detailContainer">
+                        <label for="Username" id="lableName" class="nameValue">Email: <span class="star">&#42;</span>
+                        </label>
+                        <input type="email" id="emailValue" name="emailValue" class="nameValue">
+                    </div>
+                    <div id="emailError" class="Error"></div>
+
+                    <div id="genderContainer">
+                        <div class="genderLable">
+                            <label for="Username" id="lableName" class="nameValue">Gender: <span
+                                    class="star">&#42;</span>
+                            </label>
+                        </div>
+                        <div class="genderInput">
+                            <input type="radio" id="maleChecked" name="gender" value="maleChecked" class="">
+                            <label for="opt1" id="lableName2">Male</label>
+                            <input type="radio" id="femaleChecked" name="gender" value="femaleChecked">
+                            <label for="opt2" id="lableName2">Female</label>
+                        </div>
+                    </div>
+                    <div id="genderError" class="Error"></div>
+                    <div id="genderContainer">
+                        <div class="genderLable">
+                            <label for="Username" id="lableName" class="nameValue">Language: <span
+                                    class="star">&#42;</span>
+                            </label>
+                        </div>
+                        <div class="genderInput">
+                            <input type="checkbox" id="englishChecked" name="language" value="maleChecked" class="">
+                            <label for="opt1" id="lableName2" class="englishValue">English</label>
+                            <input type="checkbox" id="nonEnglishChecked" name="gender" value="femaleChecked">
+                            <label for="opt2" id="lableName2" class="nonEnglishValue">Non English</label>
+                            <p id="languagError"></p>
+                        </div>
+                    </div>
+                    <div id="languageError" class="Error"></div>
+                    <div id="detailContainer">
+                        <label for="About" id="lableName" class="nameValue">About:
+                        </label>
+                        <textarea id="aboutValue" name="addressValue" rows="10" cols="50" class="nameValue"
+                            placeholder=""></textarea>
+                    </div>
+                    <div id="aboutError" class="Error"></div>
+
+                    <div id="validatedNotification"><i class="fa fa-check" id="correctIcon"></i>  Successfully Submitted</div>
+
+                    <div id="btnContainer">
+                        <input type="submit" id="submit" class="btn" onclick="confirmValidity1()">
+                        <input type="reset" id="reset" class="btn" onclick="resetAll()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fourthSection">
+        <div class="fourthSectionText">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Facilities</li>
+                <li>Admissions</li>
+                <li>Kandy Branch</li>
+                <li>Teach at CIS</li>
+            </ul>
+        </div>
+        <div class="fourthSectionText">
+            <ul>
+                <li>Contact Us</li>
+                <li>News and Events</li>
+            </ul>
+        </div>
+        <div id="fourthSectionText">
+            <p>
+                COLOMBO INTERNATIONAL SCHOOL <br>
+                28, Gregory's Road, <br>
+                Colombo 7, <br>
+                Sri Lanka. <br><br>
+                009411 2697587
+            </p>
+        </div>
+    </div>
+    <footer id="foot">© Colombo International School. All rights reserved.</footer>
+    </div>
+</body>
+
+</html>
